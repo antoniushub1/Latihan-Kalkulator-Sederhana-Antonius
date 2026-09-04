@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator</title>
+    </head>
+
+    <body>
+        <script>
+            function kalkulator() {
+                let angka1 = Number(prompt("Masukkan angka pertama:"));
+                let operator = prompt("+, -, *, /");
+                let angka2 = Number(prompt("Masukkan angka kedua:"));
+
+                let hasil;
+
+                if (operator == "+") {
+                    hasil = angka1 + angka2;
+                }
+                else if (operator == "-") {
+                    hasil = angka1 - angka2;
+                }
+                else if (operator == "*") {
+                    hasil = angka1 * angka2;
+                }
+                else if (operator == "/") {
+                    hasil = angka1 / angka2;
+                }
+                else {
+                    alert("Operasi tidak valid!");
+                    return;
+                }
+
+                alert("Hasil: " + hasil);
+            }
+            kalkulator();
+        </script>
+    </body>
+</html>
