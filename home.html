@@ -6,33 +6,26 @@
 
     <body>
         <script>
-            function kalkulator() {
-                let angka1 = Number(prompt("Masukkan angka pertama:"));
-                let operator = prompt("+, -, *, /");
-                let angka2 = Number(prompt("Masukkan angka kedua:"));
-
+                const angka1 = Number(prompt("Masukkan angka pertama:"));
+                const operasi= prompt("+, -, *, /");
+                const angka2 = Number(prompt("Masukkan angka kedua:"));
                 let hasil;
-
-                if (operator == "+") {
+                if (operasi == "+") {
                     hasil = angka1 + angka2;
                 }
-                else if (operator == "-") {
+                else if (operasi == "-") {
                     hasil = angka1 - angka2;
                 }
-                else if (operator == "*") {
+                else if (operasi == "*") {
                     hasil = angka1 * angka2;
                 }
-                else if (operator == "/") {
+                else if (operasi == "/") {
                     hasil = angka1 / angka2;
                 }
                 else {
                     alert("Operasi tidak valid!");
-                    return;
                 }
-
-                alert("Hasil: " + hasil);
-            }
-            kalkulator();
+                alert("Hasil: " + hasil);           
         </script>
     </body>
 </html>
